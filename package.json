@@ -11,6 +11,9 @@
     "url": "https://github.com/Raynos/schema-table-markdown/issues",
     "email": "raynos2@gmail.com"
   },
+  "bin": {
+    "schema-table-markdown": "./bin/schema-table-markdown.js"
+  },
   "contributors": [
     {
       "name": "Raynos"
