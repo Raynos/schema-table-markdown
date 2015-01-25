@@ -11,10 +11,16 @@
     "url": "https://github.com/Raynos/schema-table-markdown/issues",
     "email": "raynos2@gmail.com"
   },
-  "contributors": [{
-    "name": "Raynos"
-  }],
+  "contributors": [
+    {
+      "name": "Raynos"
+    }
+  ],
   "dependencies": {
+    "body": "^4.5.0",
+    "jsig": "^3.1.0",
+    "minimist": "^1.1.0",
+    "process": "^0.10.0"
   },
   "devDependencies": {
     "coveralls": "^2.10.0",
@@ -25,10 +31,12 @@
     "tap-spec": "^2.1.1",
     "tape": "^3.4.0"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://github.com/Raynos/schema-table-markdown/raw/master/LICENSE"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/schema-table-markdown/raw/master/LICENSE"
+    }
+  ],
   "scripts": {
     "test": "npm run jshint -s && npm run cover -s",
     "unit-test": "node test/index.js | tap-spec",
