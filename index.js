@@ -20,11 +20,11 @@ function schemaTableMarkdown(schemaTable) {
 
         markdown += '### Request spec\n\n';
 
-        markdown += '```ocaml\n' + requestJSIG + '\n```\n\n';
+        markdown += '```hs\n' + requestJSIG + '\n```\n\n';
 
         markdown += '### Response spec\n\n';
 
-        markdown += '```ocaml\n' + responseJSIG + '\n```\n\n';
+        markdown += '```hs\n' + responseJSIG + '\n```\n\n';
     }
 
     return markdown;
