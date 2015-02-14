@@ -14,7 +14,7 @@ Convert a schema table into markdown
 
 ```json
 {
-  "devDependencies: {
+  "devDependencies": {
     "pre-commit": "~1.0.2",
     "schema-table-markdown": "~2.2.0"
   },
