@@ -12,25 +12,27 @@ Convert a schema table into markdown
 
 ## Example
 
-```js
-var schemaTableMarkdown = require("schema-table-markdown");
-
-// TODO. Show example
+```json
+{
+  "devDependencies: {
+    "pre-commit": "~1.0.2",
+    "schema-table-markdown": "~2.2.0"
+  },
+  "scripts": {
+    "schema-doc": "sirvice-display --format schemaTable --json | schema-table-markdown > docs/schema.md"
+  },
+  "pre-commit": [
+    "schema-doc"
+  ],
+  "pre-commit.silent": true,
+}
 ```
 
-## Docs
+Add `schema-table-markdown` to your project, add a pre-commit hook to run the schema documentation generation.
 
-### `var someValue = schemaTableMarkdown(/*arguments*/)`
+Use `sirvice-display` to generate a schema table from your service and pass it through `schema-table-markdown`.
 
-<!--
-  This is a jsig notation of your interface.
-  https://github.com/Raynos/jsig
--->
-```ocaml
-schema-table-markdown := (arg: Any) => void
-```
-
-// TODO. State what the module does.
+This will generate your documentation :)
 
 ## Installation
 
